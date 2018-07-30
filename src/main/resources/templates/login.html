@@ -1,10 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8"/>
+    <th:block th:include="fragment :: headhtml"></th:block>
     <title>Title</title>
+    <script type="text/javascript" src="/js/login.js"></script>
+    <script type="text/javascript" src="/js/validate.js"></script>
 </head>
-<body>
-    登录
+<body style="background-image: url('/images/login.png');background-size: cover">
+    <div class="layui-container">
+        <div class="layui-row">
+            <div class="layui-col-xs8 layui-layout-right" style="margin:100px 10px">
+                <form id="loginForm" class="layui-form">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">用户名</label>
+                        <div class="layui-input-block" style="width:350px">
+                            <input type="text" name="username" lay-verify="required"  placeholder="请输入用户名" class="layui-input"/>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">密码</label>
+                        <div class="layui-input-block"  style="width:350px">
+                            <input type="password" name="password" lay-verify="required"
+                                   placeholder="请输入用密码" class="layui-input"/>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">验证码</label>
+                        <div class="layui-input-inline">
+                            <input id="validCode" type="text" name="valiCode" onkeyup="this.value=this.value.replace(/\s/,'')"
+                                   placeholder="请输入验证码" class="layui-input"/>
+                        </div>
+                        <div class="layui-input-inline" style="width: 120px;">
+                            <canvas id="canvas" width="120" height="38"></canvas>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <input type="checkbox" name="remberMe" lay-skin="primary" lay-filter="check1" title="记住我"/>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn layui-btn-danger" type="reset">重置</button>
+                            <button class="layui-btn layui-btn-normal" lay-submit="" lay-filter="login">提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

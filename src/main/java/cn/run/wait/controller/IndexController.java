@@ -1,6 +1,7 @@
 package cn.run.wait.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -8,8 +9,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class IndexController {
-    @RequestMapping("/")
+    @RequestMapping("/index")
+    public String toIndex(){
+        return "index";
+    }
+
+    @RequestMapping("/login")
     public String toLogin(){
         return "login";
+    }
+
+    @RequestMapping("/{page}")
+    public String toPage(@PathVariable(name = "page")String page){
+        return page;
     }
 }
