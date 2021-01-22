@@ -41,7 +41,7 @@ public class ShiroConfig {
         map.put("/**", "authc");
 
         factoryBean.setFilterChainDefinitionMap(map);
-        log.info("shiro factory is build..........");
+        log.info("shiro factory is build...........");
         return factoryBean;
     }
 
