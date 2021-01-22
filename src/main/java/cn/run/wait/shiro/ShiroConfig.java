@@ -33,8 +33,8 @@ public class ShiroConfig {
         map.put("/logout", "logout");
         map.put("/js/**", "anon");
         map.put("/images/**", "anon");
-        map.put("/css/**", "anon");
-        map.put("/layui/**", "anon");
+        map.put("/css/**", "anongg");
+        map.put("/layui/**", "anongg");
         map.put("/treegrid/**", "anon");
         map.put("/user/login", "anon");
         map.put("/user/sendMessage", "anon");
