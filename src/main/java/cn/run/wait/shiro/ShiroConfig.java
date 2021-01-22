@@ -32,8 +32,8 @@ public class ShiroConfig {
         LinkedHashMap<String,String> map = new LinkedHashMap();
         map.put("/logout", "logout");
         map.put("/js/**", "anon");
-        map.put("/images/**", "anon");
-        map.put("/css/**", "anon");
+        map.put("/images/**", "anons");
+        map.put("/css/**", "anons");
         map.put("/layui/**", "anon");
         map.put("/treegrid/**", "anon");
         map.put("/user/login", "anon");
