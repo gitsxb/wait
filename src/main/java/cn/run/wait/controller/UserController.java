@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class UserController {
     public static void main(String[] args) {
-
+        for (String arg : args) {
+            
+        }
     }
 }

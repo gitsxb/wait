@@ -34,7 +34,7 @@ public class ShiroConfig {
         map.put("/js/**", "anon");
         map.put("/images/**", "anons");
         map.put("/css/**", "anons");
-        map.put("/layui/**", "anongggg");
+        map.put("/layui/**", "anonggggaaaa");
         map.put("/treegrid/**", "anon");
         map.put("/user/login", "anon");
         map.put("/user/sendMessage", "anon");
