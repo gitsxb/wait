@@ -19,7 +19,7 @@ public class IndexController {
         return "login";
     }
 
-    @RequestMapping("/{page}")
+    @RequestMapping("/{page}/aa")
     public String toPage(@PathVariable(name = "page")String page){
         return page;
     }
