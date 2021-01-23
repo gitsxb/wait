@@ -1,4 +1,4 @@
 package cn.run.wait.controller;
 
-public class Hello {
+public class hello1 {
 }
