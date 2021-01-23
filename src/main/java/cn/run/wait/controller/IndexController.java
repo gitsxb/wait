@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class IndexController {
     @RequestMapping("/index")
     public String toIndex(){
-        return "index111";
+        return "index1111";
     }
 
     @RequestMapping("/login")
@@ -19,7 +19,7 @@ public class IndexController {
         return "login";
     }
 
-    @RequestMapping("/{page}/a")
+    @RequestMapping("/{page}")
     public String toPage(@PathVariable(name = "page")String page){
         return page;
     }
