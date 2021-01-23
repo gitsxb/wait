@@ -13,7 +13,7 @@ import org.apache.shiro.subject.PrincipalCollection;
 public class ShiroRealm extends AuthorizingRealm {
 
     @Override
-    protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
+    protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals1) {
 
         return null;
     }
